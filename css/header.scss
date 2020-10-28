@@ -1,0 +1,75 @@
+.header {
+    width: 100%;
+    background: #0F0F0F;
+    position: fixed;
+    top: 0;
+
+    &-block {
+        width: 90%;
+        margin: auto;
+        padding: 13px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: inherit;
+
+        &__logo {
+            svg {
+                width: 150px;
+                height: 45px;
+                fill: #FFFFFF;
+            }
+
+            &:hover {
+                svg {
+                    fill: #7b7575;
+                }
+            }
+        }
+    }
+
+    &-nav {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        &__menu {
+            width: 630px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 162px;
+        }
+
+        &__link {
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 33px;
+            text-transform: uppercase;
+
+            &:hover {
+                color: #7b7575;
+            }
+        }
+
+        &__social {
+            display: flex;
+            align-items: center;
+
+            &-link {
+                svg {
+                    box-sizing: inherit;
+                    fill: #fff;
+                    margin-left: 21px;
+                }
+
+                &:hover {
+                    svg {
+                        fill: #7b7575;
+                    }
+
+                }
+            }
+        }
+    }
+}
