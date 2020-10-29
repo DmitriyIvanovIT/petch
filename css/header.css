@@ -164,14 +164,6 @@
 @media (max-width: 821px) {
   .header-nav {
     margin: 0;
-  }
-  .header-nav__menu {
-    margin-right: 5%;
-  }
-}
-
-@media (max-width: 678px) {
-  .header-nav {
     position: fixed;
     width: 100%;
     top: 60px;
