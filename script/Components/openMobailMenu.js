@@ -7,7 +7,7 @@ const openMobailMenu = () => {
     
     const openMenu = () => {
         mobailMenuBtn.classList.toggle('mobail-menu__btn_active');
-        headerNav.classList.toggle('header-nav_active')
+        headerNav.classList.toggle('header-nav_active');
     }
 
     mobailMenu.addEventListener('click', openMenu);
