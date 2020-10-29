@@ -3,14 +3,16 @@
     flex-direction: column;
     max-width: 1200px;
     width: 95%;
-    margin: 30px auto;
+    margin: auto;
 }
 
 .about-block {
     display: flex;
+    padding: 30px;
 
     &:nth-child(even) {
         flex-direction: row-reverse;
+        padding-top: 0;
     }
 
     &__img {

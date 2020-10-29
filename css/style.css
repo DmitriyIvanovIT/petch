@@ -61,4 +61,8 @@ input {
   outline: none;
   font-family: inherit;
 }
+
+.hide {
+  display: none !important;
+}
 /*# sourceMappingURL=style.css.map */

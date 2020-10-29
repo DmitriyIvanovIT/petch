@@ -8,13 +8,14 @@
           flex-direction: column;
   max-width: 1200px;
   width: 95%;
-  margin: 30px auto;
+  margin: auto;
 }
 
 .about-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 30px;
 }
 
 .about-block:nth-child(even) {
@@ -22,6 +23,7 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  padding-top: 0;
 }
 
 .about-block__img {
