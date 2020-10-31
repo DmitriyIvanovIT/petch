@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="css/hero/hero.css">
     <link rel="stylesheet" href="css/about/about.css">
     <link rel="stylesheet" href="css/catalog/catalog.css">
+    <link rel="stylesheet" href="css/footer/footer.css">
+    <link rel="stylesheet" href="css/modal/modal.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
     <title>Petch - Главная страница</title>
 </head>
 
@@ -50,7 +52,7 @@
     <section class="hero">
         <svg class="icon hero__logo">
             <use xlink:href="image/icons/icons.svg#logo"></use>
-          </svg>
+        </svg>
     </section>
 
     <section class="about">
@@ -70,7 +72,7 @@
                 <ul class="about-block__list">
                     <li class="about-block__item">Качество, безопасность, доступность!</li>
                     <li class="about-block__item">С нами вы создадите уникальные вещи!</li>
-                    <li class="about-block__item">Заказывай больше, плати меньше!</li>     
+                    <li class="about-block__item">Заказывай больше, плати меньше!</li>
                 </ul>
             </div>
         </div>
@@ -81,49 +83,49 @@
         <div class="catalog__cads">
             <div class="catalog__card dyes__card" data-color="#265baa">
                 <span class="dyes__hit">Хит</span>
-                <div class="dyes__img"></div>
+                <div class="catalog__img dyes__img"></div>
                 <span class="catalog__text">BLUE</span>
             </div>
 
             <div class="catalog__card dyes__card" data-color="#dbc500">
                 <span class="dyes__hit">Хит</span>
-                <div class="dyes__img"></div>
+                <div class="catalog__img dyes__img"></div>
                 <span class="catalog__text">YELLOW</span>
             </div>
 
             <div class="catalog__card dyes__card" data-color="#0F0F0F">
                 <span class="dyes__hit">Хит</span>
-                <div class="dyes__img"></div>
+                <div class="catalog__img dyes__img"></div>
                 <span class="catalog__text">BLACK</span>
             </div>
 
             <div class="catalog__card dyes__card" data-color="#FF8C00">
                 <span class="dyes__hit hide">Хит</span>
-                <div class="dyes__img"></div>
+                <div class="catalog__img dyes__img"></div>
                 <span class="catalog__text">ORANGE</span>
             </div>
 
             <div class="catalog__card dyes__card" data-color="#FFA500">
                 <span class="dyes__hit hide">Хит</span>
-                <div class="dyes__img"></div>
+                <div class="catalog__img dyes__img"></div>
                 <span class="catalog__text">MANDARIN</span>
             </div>
 
             <div class="catalog__card dyes__card" data-color="#ba136e">
                 <span class="dyes__hit hide">Хит</span>
-                <div class="dyes__img"></div>
+                <div class="catalog__img dyes__img"></div>
                 <span class="catalog__text">PINK</span>
             </div>
 
             <div class="catalog__card dyes__card" data-color="#20B2AA">
                 <span class="dyes__hit hide">Хит</span>
-                <div class="dyes__img"></div>
+                <div class="catalog__img dyes__img"></div>
                 <span class="catalog__text">LIGHT BLUE</span>
             </div>
 
             <div class="catalog__card dyes__card" data-color="#fce018">
                 <span class="dyes__hit">Хит</span>
-                <div class="dyes__img"></div>
+                <div class="catalog__img dyes__img"></div>
                 <span class="catalog__text">LEMON</span>
             </div>
         </div>
@@ -132,16 +134,104 @@
     <section class="catalog kit">
         <h2 class="catalog__title">Наборы</h2>
         <div class="catalog__cads">
+            <div class="catalog__card kit__card" data-kit="small">
+                <div class="catalog__img">
+                    <img src="image/kit/small.jpg" alt="">
+                </div>
+                <span class="catalog__text">Small</span>
+            </div>
 
+            <div class="catalog__card kit__card" data-kit="big">
+                <div class="catalog__img">
+                    <img src="image/kit/big.jpg" alt="">
+                </div>
+                <span class="catalog__text">Big</span>
+            </div>
         </div>
     </section>
 
     <section class="catalog additionally">
         <h2 class="catalog__title">Дополнительно</h2>
         <div class="catalog__cads">
-            
+            <div class="catalog__card additionally__card" data-additionally="activator">
+                <div class="catalog__img">
+                    <img src="image/additionally/activator.jpg" alt="activator">
+                </div>
+                <span class="catalog__text">Активатор</span>
+            </div>
+
+            <div class="catalog__card additionally__card" data-additionally="accessories">
+                <div class="catalog__img">
+                    <img src="image/additionally/accessories.jpg" alt="accessories">
+                </div>
+                <span class="catalog__text">Акссесуары</span>
+            </div>
+
+            <div class="catalog__card additionally__card" data-additionally="socks">
+                <div class="catalog__img">
+                    <img src="image/additionally/socks.jpg" alt="socks">
+                </div>
+                <span class="catalog__text">Носки</span>
+            </div>
+
+            <div class="catalog__card additionally__card" data-additionally="thread">
+                <div class="catalog__img">
+                    <img src="image/additionally/thread.jpg" alt="thread">
+                </div>
+                <span class="catalog__text">Нить</span>
+            </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="footer-block">
+            <div class="footer-block__logo">
+                <svg class="icon">
+                    <use xlink:href="image/icons/icons.svg#logo-menu"></use>
+                </svg>
+            </div>
+            <span class="footer-block__support">
+                <a href="mailto:support@peach.ru">support@peach.ru</a> техподдержка
+            </span>
+        </div>
+    </footer>
+
+    <div class="modal hide">
+        <div class="modal__content">
+            <button class="modal__close">
+                <svg class="icon">
+                    <use xlink:href="image/icons/icons.svg#close"></use>
+                  </svg>
+            </button>
+            <div class="modal__block modal__block_left">
+                <div class="modal__img" style="background: #265baa;"></div>
+                <span class="modal__name">BLUE</span>
+            </div>
+            <div class="modal__block modal__block_right">
+                <h2 class="modal__title">Blue</h2>
+                <span class="modal__price">180p</span>
+                <div class="modal__select select-block">
+                    <span class="select-block__title">Выберите объем</span>
+                    <select class="select-block__select">
+                        <option value="10" class="select-block__item">10 гр</option>
+                        <option value="25" class="select-block__item">25 гр</option>
+                        <option value="50" class="select-block__item">50 гр</option>
+                        <option value="100" class="select-block__item">100 гр</option>
+                    </select>
+                </div>
+                <button class="modal__btn">В КОРЗИНУ</button>
+                <p class="modal__description">
+                    Краситель для тканей растительного происхождения (хлопок, лён, вискоза). Подходит для домашнего использования.
+                    <br><br>
+                    На окрашивание одной футболки в среднем необходимо 2-3 гр. красителя.
+                    <br><br>
+                    Чтобы достичь максимальной яркости изделия, смешайте раствор исходя из пропорции 3 гр. на 100 мл воды. Также при уменьшении концентрацииможно достичь более светлых оттенков.
+                    <br><br>
+                    Не забудьте приобрести активатор. Он необходим в процессе окрашивания.
+                </p>
+            </div>
+        </div>
+    </div>
 
     <script src="script/index.js" type="module" defer></script>
 </body>

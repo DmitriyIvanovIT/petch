@@ -65,7 +65,7 @@
   line-height: 40px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 871px) {
   .about-block {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
