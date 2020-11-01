@@ -65,4 +65,8 @@ input {
 .hide {
   display: none !important;
 }
+
+.lock {
+  overflow: hidden;
+}
 /*# sourceMappingURL=style.css.map */

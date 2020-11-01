@@ -32,6 +32,8 @@
           align-items: flex-start;
   padding: 60px;
   padding-bottom: 26px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .modal__close {
@@ -86,14 +88,12 @@
 
 .modal__title {
   font-size: 36px;
-  line-height: 40px;
   color: #FFFFFF;
   margin-bottom: 24px;
 }
 
 .modal__price {
   font-size: 24px;
-  line-height: 30px;
   color: #FFFFFF;
   margin-bottom: 24px;
 }
@@ -162,26 +162,75 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 70vh;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    height: 100vh;
+    padding: 30px;
   }
   .modal__block_left {
     margin-right: 0;
+  }
+  .modal__block_right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: auto;
   }
   .modal__name {
     display: none;
   }
   .modal__title {
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
   .modal__price {
-    margin-bottom: 10px;
+    margin-bottom: 0;
+  }
+  .modal__select {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 0;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .modal__btn {
+    margin-bottom: 0;
+  }
+  .modal__description {
+    margin-top: 30px;
+    margin-bottom: auto;
+    height: auto;
+  }
+  .select-block__title {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  .select-block__select {
+    width: 136px;
+    height: 27px;
+    outline: none;
+    font-size: 18px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 813px) {
+  .modal {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
   .modal__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -191,19 +240,14 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    overflow-y: scroll;
   }
   .modal__name {
     display: none;
   }
-  .modal__title {
-    margin-bottom: 10px;
-  }
-  .modal__price {
-    margin-bottom: 10px;
-  }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .modal {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -223,21 +267,39 @@
   }
   .modal__title {
     font-size: 18px;
-    line-height: 20px;
-    margin-bottom: 6px;
   }
   .modal__price {
     font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 6px;
+  }
+  .modal__btn {
+    width: 160px;
+    height: 37px;
+    font-size: 16px;
   }
   .modal__description {
     font-size: 14px;
   }
+  .select-block {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 20px 0;
+  }
   .select-block__title {
     font-size: 14px;
     color: #FFFFFF;
-    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 330px) {
+  .select-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .select-block__title {
+    margin-bottom: 16px;
   }
 }
 /*# sourceMappingURL=modal.css.map */
